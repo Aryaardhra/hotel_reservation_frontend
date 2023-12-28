@@ -1,0 +1,131 @@
+.header{
+   /* background: linear-gradient(90deg, rgba(2,0,36,1) 10%, rgba(183,0,255,1) 30%, rgba(2,0,36,1) 67%);*/
+   background-color: #c6bfd8;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+}
+
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode{
+    margin: 20px 0px 10px 0px;
+}
+
+.headerList{
+    display: flex;
+    gap:40px;
+    margin-bottom: 50px;
+}
+
+.headerListItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #061121;;
+}
+
+.headerListItem.active{
+    border: 1px solid #061121;;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.headerTitle{
+    color: rgb(5 9 83);
+}
+.headerDesc{
+    margin: 20px 0px;
+    color: rgb(5 9 83);
+}
+
+.headerBtn{
+    background-color: #97a3a9db;
+    font-weight: 500;
+    border: 1px solid #522b2b;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: #ebf3f2;
+    /* border: 3px solid rgb(6 8 49); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+    color: black;
+    box-shadow: 0 2px 21px 2px #451d6a;
+    height: 50px;
+}
+
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.headerSearchInput{
+    border: none;
+    outline: none;
+    color: black;
+    background-color: aliceblue;
+}
+
+.headerSearchText{
+    color:black;
+    cursor: pointer;
+}
+
+.date{
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.options{
+    position: absolute;
+    top: 50px;
+    background-color: #cfd9e2;
+    color: #090808;
+    border-radius: 5px;
+    z-index: 2;
+    
+}
+
+.optionItem{
+    width: 200px;
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+   
+}
+
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 12px;
+    color: black;
+}
+
+.optionCounterButton{
+    cursor: pointer;
+}
+
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}
