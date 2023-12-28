@@ -1,10 +1,11 @@
+import { axiosInstance } from "../../config";
 import useFetch from "../../hooks/useFetch";
 import LoadingIcon from "../loadingIcon/LoadingIcon";
 import "./propertyList.css";
 
 const PropertyList = () => {
 
-  const { data, loading, error } = useFetch("/hotels/countByType");
+  const { data, loading, error } = axiosInstance.useFetch("/hotels/countByType");
 
   const images = [
     "https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=",
